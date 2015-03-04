@@ -24,7 +24,7 @@ public class SQLInjectionPrepared {
 
            Class.forName(DB.driver);
            connection = DriverManager.getConnection(DB.URL, DB.ID, DB.PW);
-            String query = "SELECT * FROM persons WHERE id = ? AND name = ?";
+            String query = "SELECT * FROM persons WHERE id = ? AND pw = ?";
             statement = connection.prepareStatement(query); // SQL code is supplied
 
             //=== prompt the user for id and pw

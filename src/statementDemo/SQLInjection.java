@@ -41,7 +41,7 @@ public class SQLInjection {
         //=== Build an SQL-query-statement
         //    that searches for matching rows in the persons table
         String query = "SELECT * FROM persons " +
-        			   "WHERE id = " + id + " AND name = '" + pw + "'";
+        			   "WHERE id = " + id + " AND pw = '" + pw + "'";
         System.out.println("The complete SQL command:    " + query);
         
         //=== Execute the query and receive the result
